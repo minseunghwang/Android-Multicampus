@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button1"
+            android:id="@+id/btn1"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button2"
+            android:id="@+id/btn2"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button3"
+            android:id="@+id/btn3"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button4"
+            android:id="@+id/btn4"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button5"
+            android:id="@+id/btn0"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity간의 데이터 전달"
+            android:id="@+id/btn5"
+            android:padding="10px"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="다른 Activity로부터 데이터 받기"
+            android:id="@+id/btn6"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANR(Application Not Responding)"
+            android:id="@+id/btn7"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Counter App(실행에러)"
+            android:id="@+id/btn8"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Counter App(Handler)"
+            android:id="@+id/btn9"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="도서 검색 및 출력"
+            android:id="@+id/btn10"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="도서 검색(CUSTOM)"
+            android:id="@+id/btn11"
+            android:padding="10px"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Implicit Intent(묵시적 인텐트)"
+            android:id="@+id/btn12"
+            android:padding="10px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service 시작"
+                android:id="@+id/serviceStartBtn"
+                android:padding="10px"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service 중지"
+                android:id="@+id/serviceStopBtn"
+                android:padding="10px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Broadcast Message Send!!"
+            android:id="@+id/btn13"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification 실행"
+            android:id="@+id/btn14"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SQLite sample activity"
+            android:id="@+id/btn15"
+            android:padding="10px"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주소록"
+            android:id="@+id/btn16"
+            android:padding="10px"/>
+    </LinearLayout>
+</ScrollView>

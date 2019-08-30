@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BUTTON1"
+            android:background="@color/red"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BUTTON2"
+            android:background="@color/green"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BUTTON3"
+            android:background="@color/blue"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="BUTTON4"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView 1"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView 2"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView 3"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView 4"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

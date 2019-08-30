@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidSample</string>
+    <string name="app_name2">AndroidSample2</string>
+    <string name="button1">LinearLayout Example</string>
+    <string name="button2">Lecture Example</string>
+    <string name="button3">Image처리 Activity Example</string>
+    <string name="button4">Touch Event, Toast Example</string>
+    <string name="button5">Page swipe</string>
+    <string name="toastMsg">Activity Touch!!</string>
+    <string name="nativeappkey">3293008535f8d41799925b1c89c6f27e</string>
+
+</resources>
