@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+    <resultMap id="sample" type="spring.biz.user.vo.UserVO">
+        <result property="userid" column="userid"/>
+        <result property="userpw" column="userpw"/>
+        <result property="username" column="username"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <result property="address" column="address"/>
+    </resultMap>
+	
+	<select id="login" parameterType="spring.biz.user.vo.UserVO"
+		resultType="uservo">
+		select * from userinfo
+		where userid=#{userid} and userpw = #{userpw}
+	</select>
+
+	<select id="getuser" resultType="uservo">
+		select * from userinfo where userid = #{userid}
+	</select>
+
+	<insert id="add" parameterType="uservo">
+		insert into userinfo
+		(userid, username, userpw, email, phone, address)
+		values (#{userid}, #{username}, #{userpw},
+		#{email}, #{phone}, #{address})
+	</insert>
+	<select id="list" resultType="uservo">
+		select * from userinfo
+	</select>
+	<update id="update" parameterType="uservo">
+		update userinfo set
+		email=#{email},phone=#{phone},address=#{address}
+		where userid =#{userid}
+	</update>
+	<delete id="delete">
+		delete from userinfo where userid = #{userid}
+	</delete>
+
+    <select id="search" resultType="uservo" parameterType="hashMap">
+	   select * from userinfo 
+	   <where>
+	      <if test="userid != null">
+	            userid like '%'||#{ userid  }||'%' 
+	      </if> 
+	      <if test="username != null">
+	            username like '%'||#{ username  }||'%'
+	      </if>
+	      <if test="email != null">  
+	            email like '%'||#{ email  }||'%'
+	      </if>
+	   </where>
+    </select>
+				
+</mapper>
+
+
+
+
+
+
+
+
+
+
